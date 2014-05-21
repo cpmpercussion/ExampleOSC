@@ -1,0 +1,24 @@
+#N canvas 217 181 757 187 10;
+#X obj 61 153 sendOSC;
+#X msg 61 72 connect localhost 3001;
+#X obj 61 19 loadbang;
+#X msg 385 95 send /derp 1 2 3;
+#X obj 547 28 dumpOSC 3000;
+#X obj 547 62 print;
+#X msg 229 95 send /randomnumber \$1;
+#X obj 229 52 metro 1000;
+#X obj 229 73 random 1000;
+#X obj 229 30 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 385 31 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 2 0 9 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 6 0 0 0;
+#X connect 7 0 8 0;
+#X connect 8 0 6 0;
+#X connect 9 0 7 0;
+#X connect 10 0 3 0;
