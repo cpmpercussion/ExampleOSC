@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "F53OSC.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <F53OSCPacketDestination>
+
+-(void)takeMessage:(F53OSCMessage *)message;
 
 @end
