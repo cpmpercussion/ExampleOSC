@@ -1,0 +1,3 @@
+[submodule "MetatoneOSC"]
+	path = MetatoneOSC
+	url = git://github.com/cpmpercussion/MetatoneOSC.git
